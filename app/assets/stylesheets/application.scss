@@ -1,39 +1,75 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "faqs";
+@import "home";
+
 
 body {
-	background: #f9f9f9;
-	border-right: 80px solid red;
+	font-family: 'Cutive Mono', monospace;
+	border: solid red 3px;
 	min-height: 100vh;
-	@media (max-width: 768px) {
-		border-top: 80px solid red;
-		border-right: none;
+	header {
+		background-color: rgb(54,70,82);
+		// border: solid orange 1px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;;
+		padding: 10px 5%;
+		height: 15vh;
+		.title {
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: flex-end;
+			margin: 10px 0 0 0;
+			a {
+					margin: 0;
+					color: rgb(240,243,245);
+					text-decoration: none;
+					font-size: 1.2em;
+					font-weight: 400;
+					&:hover {
+						color: blue;
+					}
+					&:focus {
+						color: purple;
+					}
+				}
+			}
+			.faqs {
+				font-size: 2em;
+				color: rgb(198,59,66);
+				text-decoration: none;
+			}
+			a, .faqs {
+				&:hover {
+					color: blue
+				}
+				&:focus {
+					color: purple;
+				}
+			}
+	}
+	@media (min-width: 768px) {
 		min-height: inherit;
+		min-height: 100vh;
+		header {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			.title {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.faqs {
+				position: absolute;
+				top: 45px;
+			}
+		}
 	}
-}
 
-.logo {
-	position: absolute;
-	right: 5px;
-	top: 46vh;
-	width: 70px;
-	@media (max-width: 768px) {
-		top: 5px;
-		left: 50%;
-		margin-left: -35px;
-	}
-}
-
-.home {
-	padding: 30px;
-	max-width: 50%;
-	@media (max-width: 768px) {
-		max-width: 100%;
-	}
-	h1 {
-		color: red;
-		font-size: 18px;
-		margin-top: 0;
-	}
 }

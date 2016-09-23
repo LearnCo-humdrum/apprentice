@@ -18,4 +18,5 @@
 
 $(document).ready(function() {
 	// Use .ready to ensure turbolinks works properly
+  console.log('Hello Standard Code')
 })

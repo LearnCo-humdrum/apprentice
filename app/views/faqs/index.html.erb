@@ -1,0 +1,52 @@
+<div id="answers">
+  <header>
+    <div class="title">
+      <a href="https://github.com/jjrajani">Front-End Developer</a>
+      <a href="http://tiy-humdrum-jenna-rajani.surge.sh/#/">Jenna Rajani</a>
+    </div>
+    <a href="/" class="faqs">About Me</a>
+  </header>
+
+  <div class="content">
+    <div class="header">
+      <h2>FAQ</h2>
+    </div>
+    <div class="questions">
+      <% @faqs.each do |faq| %>
+      <div class="faqs">
+        <p class="faq-q"><%= faq.question %></p>
+        <p class="faq-a"><%= faq.answer %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @faqs.each do |faq| %>
+      <tr>
+        <td><%= faq.question %></td>
+        <td><%= faq.answer %></td>
+        <td><%= link_to 'Show', faq %></td>
+        <td><%= link_to 'Edit', edit_faq_path(faq) %></td>
+        <td><%= link_to 'Destroy', faq, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> -->
+<!-- 
+<br>
+
+<%= link_to 'New Faq', new_faq_path %> -->

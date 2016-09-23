@@ -1,3 +1,64 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#home {
+  // max-width: 50%;
+  border: solid blue 2px;
+  height: 100vh;
+  .header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5%;
+    background-color: rgb(139,170,173);
+    h3 {
+      margin: 0;
+      color: purple;
+    }
+    a {
+      border: solid purple 2px;
+      padding: 5px 10px;
+    }
+  }
+  .content {
+    .music, .travel, .imaginate {
+      display: flex;
+      flex-wrap: wrap;
+      width: 90%;
+      max-width: 860px;
+      margin: 40px auto 0;
+      padding: 0 5%;
+      border: solid 1px rgba(100, 100, 100, 0.4);
+      border-radius: 4px;
+      box-shadow: 1px 2px 5px 1px rgba(130, 130, 130, 0.2),
+                  -1px 0px 5px 1px rgba(130, 130, 130, 0.2);
+      h3, p {
+        width: 100%;
+      }
+      &:nth-child(2n+0) {
+        h3 {
+          text-align: right;
+        }
+        p {
+          text-align: right;
+        }
+      }
+      &:nth-child(2n+1) {
+        h3 {
+          text-align: left;
+        }
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    .content {
+      .music, .travel, .imaginate {
+        padding: 0 5%;
+      }
+    }
+  }
+}
