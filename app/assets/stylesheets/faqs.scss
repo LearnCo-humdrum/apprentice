@@ -40,9 +40,6 @@
         &:nth-child(-n+4) {
             width: 40%;
           }
-        &:nth-child(4n+0) {
-          text-align: left;
-        }
         .faq-a {
           margin: 0;
           padding: 10px 5% 10px 8%;
@@ -56,5 +53,14 @@
   }
   @media (max-width: 768px) {
     min-height: inherit;
+    .content {
+      .questions {
+        .faqs {
+          &:nth-child(-n+4) {
+            width: 90%;
+          }
+        }
+      }
+    }
   }
 }
