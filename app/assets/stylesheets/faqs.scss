@@ -33,7 +33,7 @@
         .faq-q {
           font-weight: bold;
           width: 100%;
-          font-size: 1.2em;
+          font-size: 1.3em;
           margin: 0;
           padding: 10px 5% 7px;
         }
@@ -42,11 +42,16 @@
           }
         .faq-a {
           margin: 0;
-          padding: 10px 5% 10px 8%;
+          padding: 10px 5%;
           width: 100%;
         }
         &:last-child {
           margin-bottom: 40px;
+        }
+        &:hover {
+          .faq-q {
+            color: rgb(227,23,10);
+          }
         }
       }
     }

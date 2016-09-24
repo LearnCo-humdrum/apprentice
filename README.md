@@ -1,3 +1,4 @@
-# Apprentice
+### Apprentice Project - Jenna Rajani Submission
 
-Start me up and view me in a browser to see what your next set of instructions are!
+#### Questions:
+* On my FAQ, how would I inject the link data into an actual link so I could link my email, gitHub, and linkedin.
