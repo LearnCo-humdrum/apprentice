@@ -4,13 +4,12 @@
 
 #home {
   // max-width: 50%;
-  border: solid blue 2px;
   height: 100vh;
   .header {
     display: flex;
     justify-content: flex-end;
     padding: 0 5%;
-    background-color: rgb(139,170,173);
+    background-color: rgb(54,70,82); //rgb(139,170,173);
     h3 {
       margin: 0;
       color: purple;

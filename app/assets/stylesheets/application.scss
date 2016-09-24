@@ -7,11 +7,9 @@
 
 body {
 	font-family: 'Cutive Mono', monospace;
-	border: solid red 3px;
 	min-height: 100vh;
 	header {
-		background-color: rgb(54,70,82);
-		// border: solid orange 1px;
+		border-bottom: solid 2px rgb(227,23,10);
 		display: flex;
 		flex-wrap: wrap;
 		align-items: flex-start;;
@@ -26,7 +24,7 @@ body {
 			margin: 10px 0 0 0;
 			a {
 					margin: 0;
-					color: rgb(240,243,245);
+					color: rgb(54,70,82); //rgb(240,243,245);
 					text-decoration: none;
 					font-size: 1.2em;
 					font-weight: 400;
@@ -40,7 +38,7 @@ body {
 			}
 			.faqs {
 				font-size: 2em;
-				color: rgb(198,59,66);
+				color: rgb(227,23,10);
 				text-decoration: none;
 			}
 			a, .faqs {
