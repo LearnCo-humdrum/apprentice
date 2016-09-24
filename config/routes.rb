@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get '/answers', to: 'faqs#index'
   get '/answer/:id', to: 'faqs#show'
   get '/faq/new', to: 'faqs#new'
-  get '/map', to: 'maps#index'
-  get '/map/new-point', to: 'maps#create'
+  get '/maps', to: 'maps#index'
+  get '/maps/new', to: 'maps#new'
   root 'home#index'
   
   devise_for :users
