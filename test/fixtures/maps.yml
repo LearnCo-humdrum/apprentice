@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat: MyString
+  lng: 
+  distance: 1
+  bearing: 1
+
+two:
+  lat: MyString
+  lng: 
+  distance: 1
+  bearing: 1
