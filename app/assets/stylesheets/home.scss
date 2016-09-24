@@ -7,16 +7,13 @@
   height: 100vh;
   .header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 5%;
     background-color: rgb(54,70,82); //rgb(139,170,173);
-    h3 {
-      margin: 0;
-      color: purple;
-    }
     a {
-      border: solid purple 2px;
       padding: 5px 10px;
+      color: rgba(225,225,225,0.875);
+      text-decoration: none;
     }
   }
   .content {
@@ -33,22 +30,6 @@
                   -1px 0px 5px 1px rgba(130, 130, 130, 0.2);
       h3, p {
         width: 100%;
-      }
-      &:nth-child(2n+0) {
-        h3 {
-          text-align: right;
-        }
-        p {
-          text-align: right;
-        }
-      }
-      &:nth-child(2n+1) {
-        h3 {
-          text-align: left;
-        }
-        p {
-          text-align: left;
-        }
       }
     }
   }

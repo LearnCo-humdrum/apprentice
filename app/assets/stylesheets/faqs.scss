@@ -7,21 +7,20 @@
   .content {
     .header {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       padding: 0 5%;
       background-color: rgb(54,70,82);
-      h2 {
-        color: rgba(225,225,225,0.875);
-      }
       a {
-        border: solid purple 2px;
         padding: 5px 10px;
+        color: rgba(225,225,225,0.875);
+        text-decoration: none;
       }
     }
     .questions {
       display: flex;
       width: 100%;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       .faqs {
         display: flex;
         flex-wrap: wrap;
@@ -30,23 +29,24 @@
         margin: 40px auto 0;
         border: solid 1px rgba(100, 100, 100, 0.4);
         border-radius: 4px;
-        box-shadow: 1px 2px 5px 1px rgba(130, 130, 130, 0.2),
-                    -1px 0px 5px 1px rgba(130, 130, 130, 0.2);
+        box-shadow: 0px 2px 2px 1px rgba(130, 130, 130, 0.2);
         .faq-q {
           font-weight: bold;
           width: 100%;
           font-size: 1.2em;
           margin: 0;
           padding: 10px 5% 7px;
-          border-bottom: solid 2px rgb(227,23,10);
-          background-color: rgba(54,70,82, 0.8);
-          color: white;
+        }
+        &:nth-child(-n+4) {
+            width: 40%;
+          }
+        &:nth-child(4n+0) {
+          text-align: left;
         }
         .faq-a {
           margin: 0;
           padding: 10px 5% 10px 8%;
           width: 100%;
-          background-color: rgb(245,245,245);
         }
         &:last-child {
           margin-bottom: 40px;
