@@ -19,4 +19,11 @@
 $(document).ready(function() {
 	// Use .ready to ensure turbolinks works properly
   console.log('Hello Standard Code')
+
+  $.ajax({
+    url: 'https://murmuring-hollows-84750.herokuapp.com/maps',
+    dataType: 'json'
+  }).then( res=> {
+    console.log(res)
+  })
 })
